@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2020/12/24 17:43:29.000.185,=E:\RadProjects\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/24 17:43:29.000.540,=E:\RadProjects\Unit1.cpp</Transaction>
+    <Transaction>2020/12/29 14:11:19.000.283,=E:\RadProjects\Unit1.cpp</Transaction>
+    <Transaction>2020/12/29 14:11:19.000.163,=E:\RadProjects\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/29 14:26:16.000.358,=E:\RadProjects\Unit1.cpp</Transaction>
+    <Transaction>2020/12/29 14:26:16.000.329,=E:\RadProjects\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/29 15:29:02.000.632,=E:\RadProjects\Unit1.cpp</Transaction>
+    <Transaction>2020/12/29 15:29:02.000.718,=E:\RadProjects\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/29 15:31:49.000.401,E:\RadProjects\TetheringApps\App1\Unit1.fmx=E:\RadProjects\Unit1.fmx</Transaction>
+    <Transaction>2020/12/29 15:31:49.000.401,E:\RadProjects\TetheringApps\App1\Unit1.cpp=E:\RadProjects\Unit1.cpp</Transaction>
+    <Transaction>2020/12/29 15:31:49.000.401,E:\RadProjects\TetheringApps\App1\Unit1.h=E:\RadProjects\Unit1.h</Transaction>
+    <Transaction>2020/12/29 15:31:52.000.344,E:\RadProjects\TetheringApps\App1\Project1PCH1.h=E:\RadProjects\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/29 15:32:05.000.533,E:\RadProjects\TetheringApps\App1\TetheringApp1PCH1.h=E:\RadProjects\TetheringApps\App1\Project1PCH1.h</Transaction>
+    <Transaction>2020/12/29 15:32:05.000.541,E:\RadProjects\TetheringApps\App1\TetheringApp1.cbproj=E:\RadProjects\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

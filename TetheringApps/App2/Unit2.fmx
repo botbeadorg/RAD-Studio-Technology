@@ -1,0 +1,131 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 621
+  ClientWidth = 839
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 745.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object Label2: TLabel
+    Position.X = 40.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 737.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+  object ImageControl1: TImageControl
+    Position.X = 40.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 8
+    Position.X = 392.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'Transient Resources Data'
+    object EditButton1: TEditButton
+      CanFocus = False
+      Cursor = crArrow
+      Size.Width = 105.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Send Transient'
+      OnClick = EditButton1Click
+    end
+  end
+  object Button1: TButton
+    Position.X = 376.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Send Transient Stream'
+    OnClick = Button1Click
+  end
+  object ImageControl2: TImageControl
+    Position.X = 376.000000000000000000
+    Position.Y = 344.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 233.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+  end
+  object Button2: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Trigger Remote Action by code '
+    OnClick = Button2Click
+  end
+  object Button3: TButton
+    Position.X = 552.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Remote Action At design time'
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 576
+    Top = 296
+  end
+  object TetheringManager1: TTetheringManager
+    OnPairedFromLocal = TetheringManager1PairedFromLocal
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 56
+    Top = 544
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Text = 'TetheringAppProfile1'
+    Actions = <
+      item
+        IsPublic = True
+        NotifyUpdates = False
+      end>
+    Resources = <
+      item
+        IsPublic = False
+        OnResourceReceived = TetheringAppProfile1Resources0ResourceReceived
+      end
+      item
+        IsPublic = False
+        OnResourceReceived = TetheringAppProfile1Resources1ResourceReceived
+      end>
+    Left = 48
+    Top = 456
+  end
+  object ActionList1: TActionList
+    Left = 488
+    Top = 56
+    object actReset: TAction
+      Text = 'Remote Action At design time'
+    end
+  end
+end

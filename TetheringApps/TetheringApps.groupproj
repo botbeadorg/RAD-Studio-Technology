@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{45068949-44DA-42EB-9EC0-924EFD4A6541}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="App1\TetheringApp1.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="App2\TetheringApp2.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TetheringApp1">
+        <MSBuild Projects="App1\TetheringApp1.cbproj"/>
+    </Target>
+    <Target Name="TetheringApp1:Clean">
+        <MSBuild Projects="App1\TetheringApp1.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetheringApp1:Make">
+        <MSBuild Projects="App1\TetheringApp1.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetheringApp2">
+        <MSBuild Projects="App2\TetheringApp2.cbproj"/>
+    </Target>
+    <Target Name="TetheringApp2:Clean">
+        <MSBuild Projects="App2\TetheringApp2.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetheringApp2:Make">
+        <MSBuild Projects="App2\TetheringApp2.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TetheringApp1;TetheringApp2"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TetheringApp1:Clean;TetheringApp2:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TetheringApp1:Make;TetheringApp2:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
