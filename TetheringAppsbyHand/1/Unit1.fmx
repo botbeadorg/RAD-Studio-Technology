@@ -1,0 +1,75 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 569
+  ClientWidth = 835
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 2
+    Text = 'tethering'
+    OnClick = Button1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 264.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 545.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 541.000000000000000000
+    Viewport.Height = 493.000000000000000000
+  end
+  object Button2: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 9
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 24.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 233.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 56.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 97.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Text = 'TetheringAppProfile1'
+    Actions = <>
+    Resources = <>
+    OnResourceReceived = TetheringAppProfile1ResourceReceived
+    Left = 200
+    Top = 56
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndManagersDiscovery = TetheringManager1EndManagersDiscovery
+    OnEndProfilesDiscovery = TetheringManager1EndProfilesDiscovery
+    OnPairedToRemote = TetheringManager1PairedToRemote
+    OnRequestManagerPassword = TetheringManager1RequestManagerPassword
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 200
+    Top = 112
+  end
+end

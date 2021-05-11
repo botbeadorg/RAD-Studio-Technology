@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2021/04/28 11:51:40.000.962,=F:\ProjRadStudio20\WebModuleUnit1.cpp</Transaction>
+    <Transaction>2021/04/28 11:51:40.000.485,=F:\ProjRadStudio20\FormUnit1.cpp</Transaction>
+    <Transaction>2021/04/28 11:51:40.000.728,=F:\ProjRadStudio20\ServerMethodsUnit1.cpp</Transaction>
+    <Transaction>2021/05/06 08:39:02.000.087,=F:\ProjRadStudio20\Unit1.cpp</Transaction>
+    <Transaction>2021/05/06 08:39:03.000.424,=F:\ProjRadStudio20\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/06 08:44:43.000.959,=F:\ProjRadStudio20\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/06 08:44:43.000.811,=F:\ProjRadStudio20\Unit1.cpp</Transaction>
+    <Transaction>2021/05/08 15:47:55.000.284,=F:\ProjRadStudio20\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/08 15:47:55.000.102,=F:\ProjRadStudio20\Unit1.cpp</Transaction>
+    <Transaction>2021/05/08 15:48:08.000.649,F:\ProjRadStudio20\Unit1.cpp=F:\ProjRadStudio20\TetheringAppsbyHand\1\Unit1.cpp</Transaction>
+    <Transaction>2021/05/08 15:48:08.000.649,F:\ProjRadStudio20\Unit1.fmx=F:\ProjRadStudio20\TetheringAppsbyHand\1\Unit1.fmx</Transaction>
+    <Transaction>2021/05/08 15:48:08.000.649,F:\ProjRadStudio20\Unit1.h=F:\ProjRadStudio20\TetheringAppsbyHand\1\Unit1.h</Transaction>
+    <Transaction>2021/05/08 15:48:13.000.594,F:\ProjRadStudio20\Project1PCH1.h=F:\ProjRadStudio20\TetheringAppsbyHand\1\Project1PCH1.h</Transaction>
+    <Transaction>2021/05/08 15:48:16.000.471,F:\ProjRadStudio20\Project1.cbproj=F:\ProjRadStudio20\TetheringAppsbyHand\1\Project1.cbproj</Transaction>
+  </Transactions>
+</BorlandProject>

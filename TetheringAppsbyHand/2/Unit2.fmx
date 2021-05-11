@@ -1,0 +1,57 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 649
+  ClientWidth = 860
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 176.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 649.000000000000000000
+    Size.Height = 553.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 645.000000000000000000
+    Viewport.Height = 549.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 56.000000000000000000
+    Position.Y = 248.000000000000000000
+    TabOrder = 5
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 40.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TetheringAppProfile2: TTetheringAppProfile
+    Text = 'TetheringAppProfile2'
+    OnAfterConnectProfile = TetheringAppProfile2AfterConnectProfile
+    Actions = <>
+    Resources = <>
+    OnResourceReceived = TetheringAppProfile2ResourceReceived
+    Left = 56
+    Top = 152
+  end
+  object TetheringManager2: TTetheringManager
+    OnPairedFromLocal = TetheringManager2PairedFromLocal
+    Text = 'TetheringManager2'
+    AllowedAdapters = 'Network'
+    Left = 72
+    Top = 72
+  end
+end
